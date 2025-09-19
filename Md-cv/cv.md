@@ -33,7 +33,7 @@ alert( result );
 
 ###### Experience:
 
-I am studying right now.
+I am studying and I live right now.
 
 ###### Education:
 

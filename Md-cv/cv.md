@@ -12,7 +12,7 @@ rsschool-cv <br>
 
 I am learning Java Skript, I like to create new things. An attentive and sympathetic person.
 
-###### Skills:
+###### My Skills:
 
 - HTML
 - CSS

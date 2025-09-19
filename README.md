@@ -1,1 +1,1 @@
-https://GITHUB-USERNAME.github.io/rsschool-cv/Md-cv/cv
+https://alextsim84.github.io/rsschool-cv/Md-cv/cv

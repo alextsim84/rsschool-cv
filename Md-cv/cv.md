@@ -4,7 +4,7 @@ rsschool-cv <br>
 ###### Contacts:
 
 - Address: Vitebsk, Belarus
-- Phone:+375-29-512-21-25
+- Phone:+375-29-762-21-25
 - Email: alextsimashenka84@gmail.com
 - GitHub: alextsim84
 
@@ -27,7 +27,7 @@ function sum(a, b) {
  return a + b;
 }
 
-let result = sum(1, 2);
+let result = sum(2, 3);
 alert( result );
 ```
 

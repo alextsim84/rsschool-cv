@@ -14,11 +14,11 @@ I am learning Java Skript, I like to create new things. An attentive and sympath
 
 ###### Skills:
 
-- HTML
-- CSS
-- SASS
-- JavaScript (Basic)
-- Git
+- HTML.
+- CSS.
+- SASS.
+- JavaScript.
+- Git.
 
 ###### Code Example:
 

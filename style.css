@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  transition: 0.2ms;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  width: 90%;
+  padding: 20px;
+  font-family: "Montserat", "Calibri";
+  font-weight: 400;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 750px;
+  margin: auto;
+}
+
+.cv {
+  display: flex;
+  padding: 15px;
+  background: linear-gradient(
+    180deg,
+    rgba(3, 56, 244, 0.71) 0%,
+    rgba(224, 37, 206, 0.79) 93.75%
+  );
+  border-radius: 10px;
+  max-width: 750px;
+}
+
+.header {
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 10px;
+  height: 116.02px;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+  background: rgba(196, 196, 196, 0.3);
+  border-radius: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: end;
+  max-width: 750px;
+}
+
+nav {
+  margin-top: 5px;
+}
+
+.topnav a {
+  text-align: center;
+  font-size: 12px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  width: 110px;
+  height: 116.02px;
+  padding-left: 17px;
+  padding-bottom: 30px;
+}
+
+.my-logo {
+  border-radius: 120px;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 45px;
+}
+
+.contacts {
+  justify-content: flex-start;
+  font-family: "Montserrat";
+  padding-left: 5px;
+  height: 133px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  background: rgba(196, 196, 196, 0.35);
+  border-radius: 10px;
+}
+
+.about {
+  justify-content: flex-start;
+  font-family: "Montserrat";
+  padding-left: 2px;
+  height: 88px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  background: rgba(196, 196, 196, 0.35);
+  border-radius: 10px;
+}
+
+.skills {
+  justify-content: flex-start;
+  font-family: "Montserrat";
+  padding-left: 2px;
+  height: 180px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  background: rgba(196, 196, 196, 0.35);
+  border-radius: 10px;
+}
+
+.info {
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  align-items: inherit;
+  display: flex;
+  margin-block-start: 45px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title-name {
+  background-color: #545454;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 3px 30px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.title-line {
+  height: 1px;
+  width: 100%;
+  border: 1px solid;
+  color: #545454;
+}
+
+.education {
+  font-family: "Calibri";
+  font-size: 14px;
+  line-height: 1.5;
+  color: #343434;
+}
+
+.name-education {
+  text-align: center;
+}
+
+.code {
+  font-family: "Calibri";
+  font-size: 14px;
+  line-height: 1.5;
+  color: #343434;
+}
+
+.func {
+  font-family: "Calibri";
+  font-size: 13px;
+}
+
+.lang {
+  font-family: "Calibri";
+  font-size: 13px;
+  color: #343434;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 750px;
+  margin: auto;
+}
+
+.rss-logo {
+  width: 80px;
+}

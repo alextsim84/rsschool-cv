@@ -9,6 +9,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap"
             rel="stylesheet">
+        <script src="index.js" defer></script>
     </head>
 
     <body>
@@ -19,22 +20,35 @@
                         <div class="heart_icon">
                             <img src="/img/header/icon.svg" alt="heart">
                         </div>
-                        <div class="burger"><img src="img/burger.svg" alt="jpg"></div>
-                        <div class="header_buttons">
-                            <button class="btn_about">about me</button>
-                            <button class="btn_portfolio">portfolio</button>
-                            <button class="btn_price">price</button>
-                            <button class="btn_faq">faq</button>
-                            <button class="btn_contacts">contacts</button>
+                        <!---бургер меню  -->
+                        <div class="burger" id="burger">
+                            <button type="button" class="burger_new" id="burger_new">
+                                <i></i>
+                            </button>
+                            <div class="header_buttons_media " id="header_buttons_media">
+                                <button class="btn_burger" id="btn_about_media"><a href='#btn_about'>about me</a></button>
+                                <button class="btn_burger"><a href="#portfolio">portfolio</a></button>
+                                <button class="btn_burger"><a href=" #price">price</a></button>
+                                <button class="btn_burger"><a href="#faq">faq</a></button>
+                                <button class="btn_burger"><a href="#contacts">contacts</a></button>
+                            </div>
                         </div>
 
-                    </nav>
+                        <!--бургер меню  -->
 
+                        <div class="header_buttons">
+                            <button class="btn_about"><a href='#btn_about'>about me</a></button>
+                            <button class="btn_portfolio"> <a href="#portfolio">portfolio</a></button>
+                            <button class="btn_price"> <a href=" #price">price</a></button>
+                            <button class="btn_faq"> <a href="#faq">faq</a></button>
+                            <button class="btn_contacts"> <a href="#contacts">contacts</a></button>
+                        </div>
+                    </nav>
                 </div>
             </header>
             <main>
                 <div class="main_wrapper">
-                    <div class="first_page">
+                    <div class="first_page" id="first_page">
                         <div>
                             <section class="hero">
                                 <div class="side_block">
@@ -67,15 +81,10 @@
                                     <div class="story">
                                         <span>Capture the Moment. Tell Your Story</span>
                                     </div>
-                                    <div class="scroll_hero">
+                                    <nav class="scroll_hero">
                                         <a class="scroll_hero_href " href="#part1"> <span>Scroll down </span> </a>
-
-
-                                        <a href="#part1">
-                                            <div class="scroll_icon"><img src="img/arrow-down.svg" alt="scroll"> </div>
-                                        </a>
-
-                                    </div>
+                                        <a href="#part1"><img src="img/arrow-down.svg" alt="scroll"></a>
+                                    </nav>
                                 </div>
                             </section>
                         </div>
@@ -96,14 +105,15 @@
                             </div>
                         </div>
                     </div>
-                    <section class="about">
-                        <div class="about_page">
+                    <section class="about" id="btn_about">
+                        <div class="about_page" id="part1">
                             <div class="about_first">
                                 <div>
                                     <img class="about_first1" src="img/About/picture1.png" alt="picture">
                                 </div>
                                 <p class="about_me">about me</p>
-                                <span class="about_me_media">Hi! I’m Vera, a photographer with 5 years of experience. For me, photography is
+                                <span class="about_me_media">Hi! I’m Vera, a photographer with 5 years of experience.
+                                    For me, photography is
                                     more than just an image. It’s a way to feel the moment, capture the atmosphere, and
                                     freeze time. I work with people, stories, and emotions.</span>
                             </div>
@@ -117,11 +127,12 @@
                                 <div class="about_second_img">
                                     <img class="about_second_img2" src="img/About/picture2.png" alt="picture">
                                 </div>
-                                <span class="about_second_img_text">I shoot all across Europe. I love natural light, genuine emotions, and beautiful
+                                <span class="about_second_img_text">I shoot all across Europe. I love natural light,
+                                    genuine emotions, and beautiful
                                     details. Each shot is a small piece of art. My goal is to create timeless images
                                     that tell your unique story</span>
 
-                                    <span class="about_second_img_text_media">Seeing with heart. Shooting with soul.</span>
+                                <span class="about_second_img_text_media">Seeing with heart. Shooting with soul.</span>
                             </div>
                             <div class="about_third">
                                 <div>
@@ -129,13 +140,10 @@
                                 </div>
                                 <span>Seeing with heart. Shooting with soul.</span>
                             </div>
-
-
-
                         </div>
                     </section>
-                    <section class="portfolio">
-                        <div class="wrapper_portfolio" id="part1">
+                    <section class="portfolio" id="portfolio">
+                        <div class="wrapper_portfolio">
                             <div class="container_text">
                                 <div class="portfolio_title"> <span>
                                         my portfolio
@@ -168,7 +176,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="price">
+                    <section class="price" id="price">
                         <div class="wrapper_price">
                             <div class="price_title">
                                 <div class="packages"><span>Packages & Pricing</span> </div>
@@ -179,6 +187,16 @@
                                 </div>
                             </div>
                             <div class="container_price">
+                                <div class="modal_wrapper" id="modal_wrapper">
+                                    <div class="modal">
+                                        <div class="btn_close_modal">X</div>
+                                        <span class="modal_title">Like my portfolio? Sign up for a shoot!</span>
+                                        <input type="text" class="sign_fild_text1" placeholder="YOUR NAME">
+                                        <input type="text" class="sign_fild_tel1" placeholder="+ &nbsp 1">
+                                        <button type="button" class="btn_buy_modal" id="btn_buy_modal_close">BOOK NOW</button>
+
+                                    </div>
+                                </div>
                                 <div class="price_card_wrapper">
                                     <div class="title_price_card">
                                         <p>Mini</p>
@@ -194,7 +212,7 @@
                                     <div class="price_btn_wrapper">
                                         <div class="price_btn_text1"><span>For short sessions and quick results</span>
                                         </div>
-                                        <div class="price_btn"><button class="btn_by" type="button">Book now</button>
+                                        <div class="price_btn"><button class="btn_by" id="btn_by" type="button">Book now</button>
                                         </div>
                                     </div>
                                 </div>
@@ -266,7 +284,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="faq">
+                    <section class="faq" id="faq">
                         <div class="faq_wrapper">
                             <div>
                                 <div class="faq_title_wrap">
@@ -278,53 +296,82 @@
                             </div>
                             <div class="faq_description">
                                 <div class="faq_description_title">
-                                    <div class="faq_accord">
-                                        <span>How do I book a shoot?</span>
-                                        <div class="symbol">-</div>
-                                    </div>
-                                    <p class="faq_description_title_text">Super simple – just message me through any
-                                        convenient platform (Instagram,
-                                        Telegram, WhatsApp, or the contact form on this site). We’ll discuss your
-                                        preferred date, city, and session type. Once confirmed, I’ll reserve the
-                                        date
-                                        for you and send over preparation tips.</p>
+                                    <details name="faq">
+                                        <summary class="faq_accord">How do I book a shoot?</summary>
 
+                                        <p class="faq_description_title_text">Super simple – just message me through any
+                                            convenient platform (Instagram,
+                                            Telegram, WhatsApp, or the contact form on this site). We’ll discuss your
+                                            preferred date, city, and session type. Once confirmed, I’ll reserve the
+                                            date
+                                            for you and send over preparation tips.
+                                        </p>
+                                    </details>
                                 </div>
                                 <div class="faq_description_title">
-                                    <div class="faq_accord">
-                                        <span>Can I choose the location myself?</span>
-                                        <div class="symbol">+</div>
-                                    </div>
+                                    <details name="faq">
+                                        <summary class="faq_accord">Can I choose the location myself?</summary>
+                                        <p class="faq_description_title_text">
+                                            Absolutely! If there’s a special place you love or have in mind — I’m happy
+                                            to shoot there. If you’re unsure, I can suggest beautiful spots with great
+                                            lighting and atmosphere, tailored to your vision and mood.
+                                        </p>
+
+                                    </details>
                                 </div>
                                 <div class="faq_description_title">
-                                    <div class="faq_accord">
-                                        <span>When will I receive the photos?</span>
-                                        <div class="symbol">+</div>
-                                    </div>
+                                    <details name="faq">
+                                        <summary class="faq_accord">When will I receive the photos? </summary>
+                                        <p class="faq_description_title_text">
+                                            You’ll receive your edited photos within 7–14 days. For event and wedding
+                                            sessions — up to 30 days. I deliver them in a stylish online gallery, where
+                                            you can download them in full quality or easily share with friends and
+                                            family.
+                                        </p>
+                                    </details>
                                 </div>
                                 <div class="faq_description_title">
-                                    <div class="faq_accord">
-                                        <span>Will you help me pose?</span>
-                                        <div class="symbol">+</div>
-                                    </div>
+                                    <details name="faq">
+                                        <summary class="faq_accord">Will you help me pose?</summary>
+                                        <p class="faq_description_title_text">
+                                            Definitely! I’ll guide you gently throughout the session — where to look,
+                                            how to move, how to relax. The goal is to make you feel comfortable and
+                                            natural. My approach is relaxed, and I’ll never force awkward poses. The
+                                            result? Real, expressive, and beautiful photos.
+                                        </p>
+                                    </details>
                                 </div>
                                 <div class="faq_description_title">
-                                    <div class="faq_accord">
-                                        <span>What should I wear?</span>
-                                        <div class="symbol">+</div>
-                                    </div>
+                                    <details name="faq">
+                                        <summary class="faq_accord">What should I wear?</summary>
+                                        <p class="faq_description_title_text">
+                                            After booking, I’ll send you a style guide with suggestions for colors,
+                                            textures, and combinations. The most important thing is that you feel
+                                            confident in your outfit. I’m also happy to help you coordinate looks or
+                                            plan something cohesive for couples or groups.
+                                        </p>
+                                    </details>
                                 </div>
                                 <div class="faq_description_title">
-                                    <div class="faq_accord">
-                                        <span>Do you retouch the photos?</span>
-                                        <div class="symbol">+</div>
-                                    </div>
+                                    <details name="faq">
+                                        <summary class="faq_accord">Do you retouch the photos?</summary>
+                                        <p class="faq_description_title_text">
+                                            Yes, all photos are color-corrected and lightly retouched. My editing style
+                                            is clean and natural — no overdone filters or fake skin. Just you, at your
+                                            best. Extra retouching is available upon request.
+                                        </p>
+                                    </details>
                                 </div>
                                 <div class="faq_description_title1">
-                                    <div class="faq_accord">
-                                        <span>Can I get the raw files?</span>
-                                        <div class="symbol">+</div>
-                                    </div>
+                                    <details name="faq">
+                                        <summary class="faq_accord">Can I get the raw files?</summary>
+                                        <p class="faq_description_title_text">
+                                            I don’t deliver RAW files. My work includes not only shooting, but also
+                                            careful selection and editing to create a complete and polished result.
+                                            You’ll receive only the best images, ready for printing, sharing, or
+                                            publishing.
+                                        </p>
+                                    </details>
                                 </div>
                             </div>
                         </div>
@@ -339,13 +386,13 @@
                             <div class="sign_fild_text"> <input class="sign_fild_text1" type="text" id=""
                                     placeholder="YOUR NAME">
                             </div>
-                            <div class="sign_fild_tel"><input class="sign_fild_tel1" type="tel" placeholder="+1"></div>
+                            <div class="sign_fild_tel"><input class="sign_fild_tel1" type="tel" placeholder="+ &nbsp 1"></div>
                             <div class="sign_btn"> <button class="sign_btn_buy">BOOK NOW</button></div>
                         </div>
                     </div>
                 </section>
                 <footer>
-                    <div class="footer_wrap">
+                    <div class="footer_wrap" id="contacts">
                         <div class="footer_title">
                             <div> <button>instagram</button></div>
                             <div> <button>telegram</button></div>
@@ -359,4 +406,5 @@
         </main>
         </div>
     </body>
+
 </html>

@@ -16,7 +16,6 @@ html {
     margin: auto;
     scroll-behavior: smooth;
     z-index: 1;
-
 }
 
 body {
@@ -24,7 +23,6 @@ body {
     font-family: Oswald, Mulish, Arial;
 
 }
-
 
 .header {
     background-color: var(--black-theme);
@@ -357,6 +355,9 @@ a[href]:hover {
 
 .about_second_img {
     padding-bottom: 40px;
+    width: 4rem;
+    height: 53em;
+
 }
 
 
@@ -387,33 +388,40 @@ a[href]:hover {
 
 
 .port_img1 {
-    display: flex
+    /* display: flex */
 }
 
 .port_img2 {
-    display: flex;
-    align-self: center;
+    /* display: flex;
+    align-self: center; */
 }
 
 .port_img3 {
-    display: flex;
-    align-self: center;
+    /* display: flex;
+    align-self: center; */
+}
+
+.port_img4 {
+    /* display: flex;
+    align-items: baseline; */
 }
 
 .port_img5 {
-    display: flex;
-    align-self: center;
+    /* display: flex;
+    height: 65rem;
+    align-items: end; */
+
 }
 
 .port_img6 {
-    display: flex;
-    align-self: end;
+    /* display: flex;
+    align-self: end; */
 }
 
 .slider {
-    /* position: relative; */
-    /* text-align: center;
-    top: 10px; */
+    position: relative;
+    text-align: center;
+    top: 10px;
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
@@ -423,10 +431,11 @@ a[href]:hover {
 .slider_wrapper {
     /* display: flex; */
     height: 78rem;
+    margin-block-start: 10rem;
 }
 
 .overflow {
-    /* width: 100%; */
+    width: 100%;
     overflow: hidden;
     justify-items: anchor-center;
     height: 45em;
@@ -445,7 +454,7 @@ a[href]:hover {
 .slider-inner {
     display: flex;
     gap: 20px;
-    height: 50em;
+    overflow: visible;
 }
 
 .portfolio_title {
@@ -687,12 +696,23 @@ details[open] .faq_accord::after {
     color: rgba(255, 60, 60, 1);
 }
 
+input {
+    outline: none;
+    border: 1px solid rgba(255, 60, 60, 1);
+}
+
+input:focus {
+    outline: rgba(255, 60, 60, 1);
+    border-color: rgba(255, 60, 60, 1);
+}
+
 .sign_title {
     font-family: Oswald;
     font-weight: 400;
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
+    border-color: rgba(255, 60, 60, 1);
 }
 
 .sign_fild {
@@ -701,6 +721,7 @@ details[open] .faq_accord::after {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 3rem;
+    border-color: rgba(255, 60, 60, 1);
 }
 
 .sign_fild_text1,
@@ -709,6 +730,7 @@ details[open] .faq_accord::after {
     height: 6rem;
     cursor: pointer;
     border: 1px solid var(--black-theme);
+
 }
 
 .sign_btn_buy {
@@ -937,8 +959,7 @@ input::placeholder {
 
 .modal_wrapper {
     display: flex;
-    background-color: var(--black-theme);
-
+    background-color: rgba(34, 34, 34, 0.6);
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -966,8 +987,13 @@ input::placeholder {
     display: flex;
     justify-content: end;
     margin-bottom: 53px;
-    margin-right: 20px;
+    cursor: pointer;
+    font-family: 'Mulish';
+    font-size: larger;
+    width: 30px;
+    margin-inline-start: 45rem;
 }
+
 
 .show {
     pointer-events: auto;
@@ -1019,6 +1045,7 @@ input::placeholder {
     .burger {
         display: inline;
         margin-top: 25px;
+        margin-right: 7%;
     }
 
     .header_buttons_media {
@@ -1026,12 +1053,12 @@ input::placeholder {
         flex-direction: column;
         background-color: var(--black-theme);
         justify-content: center;
-        width: 709px;
+        width: 768px;
         height: 750px;
         position: fixed;
         z-index: -1;
         right: -150vh;
-        transition: 0.5s;
+        transition: 0.5s ease;
 
     }
 
@@ -1040,10 +1067,6 @@ input::placeholder {
         z-index: 1;
         position: absolute
     }
-
-    .about_me {}
-
-
 
     .first_page {
         max-width: 768px;
@@ -1074,12 +1097,13 @@ input::placeholder {
     }
 
     .pic_hero2_img {
-        max-width: 22rem;
-        margin-left: 7rem;
+        max-width: 20rem;
+        margin-left: 2rem;
     }
 
     .vera {
-        height: 38rem;
+        height: 32rem;
+        margin-left: inherit;
     }
 
     .main_wrapper {
@@ -1147,20 +1171,62 @@ input::placeholder {
 
     .faq_wrapper {
         display: block;
+        height: 41em;
     }
 
     .faq_description {
         margin-left: 4rem;
     }
 
+    .modal>.sign_fild_text1 {
+        max-width: 380px;
+    }
+
+    .modal>.sign_fild_tel1 {
+        max-width: 380px;
+    }
+
     .sign_fild_text1,
     .sign_fild_tel1 {
-        width: 256px;
+        max-width: 256px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .sign_fild {
+        align-items: center;
     }
 
     .footer_title button {
         width: 11rem;
         font-size: 16px;
+    }
+
+    .modal_wrapper {
+        display: flex;
+        background-color: var(--black-theme);
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        pointer-events: null;
+        opacity: null;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vh;
+        transition: 0.5s ease;
+    }
+
+    .modal {
+        width: 50rem;
+        height: 35rem;
+        background-color: var(--white-theme);
+        box-shadow: 0 3px 10px rgb(223, 221, 221);
+        align-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 
@@ -1172,6 +1238,48 @@ input::placeholder {
         max-width: 380px;
         margin: auto;
         scroll-behavior: smooth;
+    }
+
+    .burger {
+        display: inline;
+        margin-top: 25px;
+        margin-right: 51%;
+    }
+
+    .modal_wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal {
+        width: 34rem;
+        height: 38rem;
+        background-color: var(--white-theme);
+        box-shadow: 0 3px 10px rgb(223, 221, 221);
+        align-content: center;
+        text-align: center;
+    }
+
+    .modal>.sign_fild_text1 {
+        max-width: 300px;
+    }
+
+    .modal>.sign_fild_tel1 {
+        max-width: 300px;
+    }
+
+    .btn_close_modal {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 27px;
+        cursor: pointer;
+        font-family: 'Mulish';
+        font-size: larger;
+        margin-left: 30rem;
+    }
+
+    .btn_buy_modal {
+        width: 300px;
     }
 
     .content_hero {
@@ -1256,13 +1364,13 @@ input::placeholder {
         align-items: center;
     }
 
-    .sign_fild_text1 {
-        width: 340px;
+    .sign_fild_text1,
+    .sign_fild_tel1 {
+        max-width: 340px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 
-    .sign_fild_tel1 {
-        width: 340px;
-    }
 
     .sign_btn_buy {
         width: 345px;
@@ -1276,9 +1384,56 @@ input::placeholder {
         flex-direction: column;
     }
 
-    .header_buttons_media {
-        display: none;
 
+    .burger.open .header_buttons_media {
+        right: 0vh;
+        z-index: 1;
+        position: absolute;
+        width: 380px;
+        height: 90%;
     }
+}
 
+.prev-button,
+.next-button {
+    cursor: pointer;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.overflow {
+    /* position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden; */
+}
+
+.slider-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-inner .img {
+    width: 50%;
+    height: 50%;
+    /* object-fit: cover; */
+}
+
+.go {
+    transform: translateX();
 }
